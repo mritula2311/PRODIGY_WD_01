@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 1em;
+}
+
+nav .logo {
+    height: 90px;
+    margin-left: 1em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1em;
+    padding: 0;
+    border-right: 1px solid #000;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background 0.4s, color 0.4s;
+}
+
+nav ul li a:hover {
+    background: #ff69b4;
+    color: #000;
+}
+
+.section {
+    padding:  1em;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#profile {
+    background: #000000; 
+    color: #ea77ad;
+    height: auto; 
+    padding: 5em 1em; 
+}
+
+.profile-image img {
+    width: 500%; 
+    max-width: 1400px; 
+    height: auto; 
+    margin: 0 auto; 
+    display: block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    }
+
+.profile-info {
+    margin: 0 auto; /* Center the text */
+    display: block; /* Shrink to fit content */
+    text-align: center; /* Shrink to fit content */
+    padding: 0.5em; /* Added padding for spacing */
+    width: 50%; /* Shrink to fit content */
+    max-width: 600px; /* Added max-width to limit the size */
+}
+
+#about, #music {
+    background: #000000;
+    color: #fa8fe6;
+    padding: 4em 1em;
+}
+
+#members {
+    background: #000000;
+    color: #f06fcb;
+    padding: 4em 0;
+}
+
+.members-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.member {
+    background: #000000;
+    border: 1px solid #d6579d;
+    border-radius: 8px;
+    padding: 1em;
+    max-width: 200px;
+    text-align: center;
+}
+
+.member img {
+    width: 100%;
+
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .members-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#contact {
+    background: #000000;
+    color: #fa8fe6;
+    padding: 4em 1em;
+}
